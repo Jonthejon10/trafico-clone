@@ -24,9 +24,12 @@
 
 .navbar .navbar-btns-container ul li {
   margin-left: 10px;
-  background-color: #ee4d47;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.navbar .navbar-btns-container ul li:last-child {
+  background-color: #ee4d47;
 }
 
 .navbar .navbar-btns-container ul li a {

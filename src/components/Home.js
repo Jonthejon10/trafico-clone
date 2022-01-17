@@ -8,7 +8,7 @@ const Home = () => {
 			<h1>Your awesome traffic permit consultant.</h1>
 
 			<button type='button' className='orange-btn'>
-				GET STARTED{' '}
+				GET STARTED
 				<span>
 					<img
 						src={require('../images/arrow-getstarted.svg').default}

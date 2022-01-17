@@ -1,0 +1,254 @@
+.contact-container {
+  padding: 100px;
+  background-image: url("../images/bg-footer_.png");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 90% auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: relative;
+}
+
+.contact-container .contact-top-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 100%;
+  margin-top: 150px;
+}
+
+.contact-container .contact-top-container .contact-card-container {
+  max-width: 340px;
+  position: relative;
+  height: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 120px;
+}
+
+.contact-container .contact-top-container .contact-card-container .contact-card-bar {
+  background-color: #ED4D47;
+  width: 10px;
+  height: 100%;
+  position: absolute;
+  border-radius: 5px 0 0 5px;
+}
+
+.contact-container .contact-top-container .contact-card-container p {
+  font-size: 20px;
+  line-height: 30px;
+  margin-left: 50px;
+}
+
+.contact-container .contact-top-container .contact-form-container {
+  width: 550px;
+  height: 440px;
+  padding: 60px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.1);
+          box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.1);
+  border-radius: 10px;
+}
+
+.contact-container .contact-top-container .contact-form-container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contact-container .contact-top-container .contact-form-container form .input-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact-container .contact-top-container .contact-form-container form .input-container label {
+  color: #402B2B;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 40px;
+  width: 40%;
+}
+
+.contact-container .contact-top-container .contact-form-container form .input-container input {
+  width: 400px;
+  height: 60px;
+  padding: 20px 20px 20px 40px;
+  background: #FFFFFF;
+  border: 1px solid rgba(238, 77, 71, 0.5);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.contact-container .contact-top-container .contact-form-container form .input-container input:focus {
+  border: 3px solid rgba(238, 77, 71, 0.5);
+  -webkit-box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.3);
+          box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.3);
+}
+
+.contact-container .contact-top-container .contact-form-container form .orange-btn {
+  width: 200px;
+  padding: 15px;
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background-color: #ee4d47;
+  color: #fff;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  cursor: pointer;
+}
+
+.contact-container .bottom-nav-container {
+  width: 100%;
+}
+
+.contact-container .bottom-nav-container nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 50px;
+  color: #fff;
+}
+
+.contact-container .bottom-nav-container nav .navbar-btns-container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+.contact-container .bottom-nav-container nav .navbar-btns-container ul li {
+  margin-left: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-container .bottom-nav-container nav .navbar-btns-container ul li a {
+  font-weight: 500;
+  width: 180px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-container footer {
+  width: 100vw;
+  padding: 30px;
+  position: absolute;
+  bottom: 0;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contact-container footer p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 30px;
+  color: #402B2B;
+}
+
+.contact-container footer .footer-icons-container ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-container footer .footer-icons-container ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #ED4D47;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.contact-container footer .footer-icons-container ul .fb-icon {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../images/fb.png");
+}
+
+.contact-container footer .footer-icons-container ul .twitter-icon {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../images/twitter.png");
+}
+
+.contact-container footer .footer-icons-container ul .ig-icon {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../images/ig.png");
+}
+/*# sourceMappingURL=Contact.css.map */

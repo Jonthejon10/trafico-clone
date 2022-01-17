@@ -17,9 +17,12 @@
 
             li {
                 margin-left: 10px;
-                background-color: #ee4d47;
                 border-radius: 5px;
                 cursor: pointer;
+
+                &:last-child {
+                    background-color: #ee4d47;
+                }
 
                 a {
                     font-weight: 500;
