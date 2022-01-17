@@ -5,15 +5,15 @@
     background-size: contain;
     display: flex;
     flex-direction: column;
-    padding: 250px 250px 250px 335px;
+    padding: 250px 250px 250px 325px;
     font-family: "DM Serif Display", serif;
     position: relative;
     z-index: 1;
 
     h1 {
-        font-size: 8rem;
+        font-size: 100px;
         max-width: 900px;
-        line-height: 116px;
+        line-height: 100%;
     }
 
     // GET STARTED BTN
