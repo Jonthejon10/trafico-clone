@@ -1,0 +1,54 @@
+// HOME
+.home-container {
+    background-image: url('../images/background-header.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    padding: 250px 250px 250px 335px;
+    font-family: "DM Serif Display", serif;
+    position: relative;
+    z-index: 1;
+
+    h1 {
+        font-size: 8rem;
+        max-width: 900px;
+        line-height: 116px;
+    }
+
+    // GET STARTED BTN
+
+    .orange-btn {
+        width: 200px;
+        padding: 15px;
+        font-family: "Rubik", sans-serif;
+        background-color: #ee4d47;
+        color: #fff;
+        border-radius: 3px;
+        margin-top: 60px;
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        cursor: pointer;
+    }
+
+    // CAR
+    .car-img {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        animation: 1s ease-out 0s 1 slideFromLeft;
+    }
+}
+
+// CAR ANIMATION
+@keyframes slideFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
