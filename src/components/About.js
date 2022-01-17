@@ -15,7 +15,7 @@ const About = () => {
             
             <div className='about-us-text-container'>
                 
-				<h2 className='section-header'>ABOUT US</h2>
+				<h3 className='section-header'>ABOUT US</h3>
 
 				<p>
 					The occupational traffic permit is one of the most important

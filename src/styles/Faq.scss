@@ -1,0 +1,105 @@
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+    background: url('../images/bg-faq.svg') top right;
+    background-repeat: no-repeat;
+    background-size: 1170px auto;
+    align-items: center;
+
+    .top-content-container {
+        display: flex;
+        justify-content: center;
+
+        .faq-text-container {
+            max-width: 550px;
+            margin-top: 150px;
+
+            .section-header {
+                color: #EE4D47;
+                font-size: 24px;
+                line-height: 40px;
+                font-weight: 500;
+                letter-spacing: 0.1em;
+                font-weight: bold;
+            }
+
+            h2 {
+                color: #402B2B;
+                font-family: 'DM Serif Display', serif;
+                font-size: 48px;
+                line-height: 140%;
+            }
+        }
+    }
+
+    .questions-container {
+        display: grid;
+        margin-top: 100px;
+        overflow: hidden;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+        max-width: 1130px;
+        
+        .question-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: #402B2B;
+
+
+            .initial-content {
+                background-color: #FFFFFF;
+                box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.1);
+                border-radius: 10px;
+                height: 90px;
+                padding: 30px;
+                word-wrap: break-word;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                z-index: 2;
+
+                h4 {
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 30px;
+                }
+                .plus-btn {
+                    height: 20px;
+                    width: 20px;
+                    background-image: url('../images/arrow-plus.svg');
+                    background-repeat: no-repeat;
+                    background-color: transparent;
+                    background-position: center;
+                    padding-left: 20px;
+                    margin-left: 10px;
+                    cursor: pointer;
+                }
+        
+                .minus-btn {
+                    height: 20px;
+                    width: 20px;
+                    padding-left: 20px;
+                    margin-left: 10px;
+                    background-image: url('../images/arrow-horizontal.svg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-color: transparent;
+                    cursor: pointer;
+                }
+
+            }
+
+            .card-description-container {
+                z-index: 1;
+                margin-top: -10px;
+                background: #FFF7F5;
+                box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.1);
+                border-radius: 10px;
+                padding: 30px;
+            }
+        }
+
+    }
+}

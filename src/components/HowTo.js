@@ -18,7 +18,7 @@ const HowTo = () => {
 			/>
 
 			<div className='howto-text-container'>
-				<h2 className='section-header'>HOW TO APPLY</h2>
+				<h3 className='section-header'>HOW TO APPLY</h3>
 
 				<p>
 					When applying for a traffic permit, there are certain
