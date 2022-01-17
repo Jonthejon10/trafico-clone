@@ -1,10 +1,9 @@
 .about-container {
     display: flex;
-    color: #000;
-    padding: 100px;
-    display: flex;
     justify-content: space-evenly;
     align-items: center;
+    color: #000;
+    padding: 100px;
 
     .about-us-text-container {
         max-width: 470px;
@@ -25,7 +24,6 @@
             line-height: 40px;
             color: #402B2B;
             margin-top: 30px;
-
         }
 
         .question-card {

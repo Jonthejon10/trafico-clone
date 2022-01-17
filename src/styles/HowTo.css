@@ -1,0 +1,33 @@
+.howto-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.howto-container .howto-text-container {
+  max-width: 455px;
+}
+
+.howto-container .howto-text-container .section-header {
+  color: #EE4D47;
+  font-size: 24px;
+  line-height: 40px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+}
+
+.howto-container .howto-text-container p {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 40px;
+  color: #402B2B;
+  margin-top: 40px;
+}
+/*# sourceMappingURL=HowTo.css.map */
