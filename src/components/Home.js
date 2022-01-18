@@ -1,12 +1,16 @@
 import React from "react"
 import '../styles/Home.css'
 
+/* HOME PAGE */
 const Home = () => {
 
-    return (
+	return (
+		
 		<div className='content-container home-container'>
+			{/* FILLER DIV FOR JUSTIFY CONTENT SPACE BETWEEN */}
 			<div className="filler"></div>
 
+			{/* MIDDLE CONTENT */}
 			<div className="home-middle-container">
 				<h1>Your awesome <br></br> traffic permit <br></br> consultant.</h1>
 
@@ -23,6 +27,7 @@ const Home = () => {
 				</button>
 			</div>
 
+			{/* CAR */}
 			<div className="home-car-container">
 				<img
 					className='car-img'

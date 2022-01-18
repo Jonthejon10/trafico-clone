@@ -6,6 +6,7 @@ import 'aos/dist/aos.css'
 
 const About = () => {
 
+	/* AOS FOR A SIMPLE CSS ANIMATION */
     useEffect(() => {
         Aos.init({ duration: 3000 })
     }, [])
@@ -13,6 +14,7 @@ const About = () => {
     return (
         <div className='content-container about-container' id='about'>
             
+			{/* TEXT CONTAINER */}
             <div className='about-us-text-container'>
                 
 				<h3 className='section-header'>ABOUT US</h3>
@@ -36,6 +38,7 @@ const About = () => {
             
             </div>
             
+			{/* IMAGE */}
 			<img
 				data-aos='fade-left'
 				className='about-illustration'

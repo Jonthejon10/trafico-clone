@@ -5,6 +5,7 @@ import 'aos/dist/aos.css'
 
 const Contact = () => {
 
+	/* AOS FOR ANIMATION */
     useEffect(() => {
 		Aos.init({ duration: 3000 })
     }, [])
@@ -16,6 +17,7 @@ const Contact = () => {
     return (
         <div className='content-container contact-container' id='contact'>
             
+			{/* CAR CONTAINER */}
              <div className='car-footer-container'>
                 <img
                     data-aos='fade-right'
@@ -26,6 +28,8 @@ const Contact = () => {
             </div>
 
 			<div className='contact-top-container'>
+
+				{/* INFO CARD */}
 				<div className='contact-card-container'>
 					<div className='contact-card-bar'></div>
 
@@ -35,6 +39,7 @@ const Contact = () => {
 					</p>
 				</div>
 
+				{/* CONTACT FORM */}
 				<div className='contact-form-container'>
 					<form>
 						<div className='input-container'>
@@ -42,8 +47,7 @@ const Contact = () => {
 							<input
 								type='text'
 								id='name'
-								placeholder='Your name'
-							/>
+								placeholder='Your name'/>
 						</div>
 
 						<div className='input-container'>
@@ -51,21 +55,19 @@ const Contact = () => {
 							<input
 								type='email'
 								id='email'
-								placeholder='Your email address'
-							/>
+								placeholder='Your email address'/>
 						</div>
 
 						<button
 							type='submit'
 							className='orange-btn'
 							onClick={handleClick}>
+							
 							GET STARTED
+
 							<span>
 								<img
-									src={
-										require('../images/arrow-getstarted.svg')
-											.default
-									}
+									src={require('../images/arrow-getstarted.svg').default}
 									alt=''
 								/>
 							</span>
@@ -74,6 +76,7 @@ const Contact = () => {
 				</div>
 			</div>
 
+			{/* BOTTOM NAVIGATION */}
 			<div className='bottom-nav-container'>
 				<nav>
 					<img
@@ -97,6 +100,7 @@ const Contact = () => {
 				</nav>
 			</div>
 
+			{/* FOOTER */}
 			<footer>
 				<p>Copyright @ 2019</p>
 

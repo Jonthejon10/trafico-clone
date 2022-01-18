@@ -9,6 +9,8 @@ const Faq = () => {
 
     const [visible, setVisible] = useState(6)
 
+
+    /* FETCHING QUESTION FROM API */
     useEffect(() => {
         async function fetchData() {
             try {
@@ -38,6 +40,7 @@ const Faq = () => {
         }
     }
 
+    /* SHOW MORE ON CLICK */
     const showMore = () => {
         setVisible(visible + 2)
     }
@@ -59,6 +62,7 @@ const Faq = () => {
 				<img src={require('../images/illus-faq.svg').default} alt='' />
 			</div>
 
+            {/* FETCHED QUESTIONS */}
 			<div className='questions-container'>
 				{questions.slice(0, visible).map((item, index) => {
 					return (
@@ -86,6 +90,7 @@ const Faq = () => {
 					)
 				})}
 
+                {/* LOAD MORE BTN */}
 				<button
 					type='button'
 					onClick={showMore}

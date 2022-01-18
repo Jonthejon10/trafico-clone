@@ -52,6 +52,7 @@
   background-color: #ED4D47;
 }
 
+/* MEDIA QUERIES */
 @media screen and (min-width: 320px) {
   .about-container {
     padding: 50px;

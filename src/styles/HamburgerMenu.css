@@ -1,3 +1,7 @@
+.hamburger-menu-wrapper {
+  /* HAMBURGER BACKGROUND */
+}
+
 .hamburger-menu-wrapper .hamburger-btn {
   cursor: pointer;
   background-image: url("../images/hamburger.svg");
@@ -20,6 +24,7 @@
   -webkit-animation: 0.2s ease-out 0s 1 slideFromRight;
           animation: 0.2s ease-out 0s 1 slideFromRight;
   overflow: hidden;
+  /* HAMBURGER CONTENT */
 }
 
 .hamburger-menu-wrapper .hamburger-container .close-hamburger {
@@ -59,6 +64,7 @@
   font-weight: 700;
 }
 
+/* SIMPLE ANIMATION */
 @-webkit-keyframes slideFromRight {
   0% {
     -webkit-transform: translateX(100%);
@@ -69,7 +75,6 @@
             transform: translateX(0);
   }
 }
-
 @keyframes slideFromRight {
   0% {
     -webkit-transform: translateX(100%);

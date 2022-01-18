@@ -8,8 +8,9 @@ import Faq from './components/Faq'
 import Contact from './components/Contact'
 
 
-function App() {
+const App = () => {
   return (
+
     <div className="container">
       
       <Navbar />
@@ -28,4 +29,4 @@ function App() {
   )
 }
 
-export default App;
+export default App

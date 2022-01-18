@@ -1,5 +1,4 @@
 .hamburger-menu-wrapper {
-    
     .hamburger-btn {
         cursor: pointer;
         background-image: url('../images/hamburger.svg');
@@ -11,6 +10,7 @@
         height: 30px;
     }
 
+    /* HAMBURGER BACKGROUND */
     .hamburger-container {
         position: fixed;
         right: 0;
@@ -34,6 +34,7 @@
             color: #fff;
         }
 
+        /* HAMBURGER CONTENT */
         .hamburger-content-container {
             height: 100%;
             width: 100%;
@@ -52,6 +53,7 @@
     }
 }
 
+/* SIMPLE ANIMATION */
 @keyframes slideFromRight {
     0% {
         transform: translateX(100%);

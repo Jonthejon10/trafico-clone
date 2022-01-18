@@ -5,12 +5,14 @@ import 'aos/dist/aos.css'
 
 const HowTo = () => {
 
+	/* AOS FOR ANIMATION */
     useEffect(() => {
 		Aos.init({ duration: 3000 })
 	}, [])
 
     return (
 		<div className='content-container howto-container' id='howto'>
+			
 			<img
 				data-aos='fade-right'
 				src={require('../images/illus-apply.svg').default}
