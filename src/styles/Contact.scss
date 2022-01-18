@@ -3,20 +3,25 @@
     background-image: url('../images/bg-footer_.png');
     background-repeat: no-repeat;
     background-position: bottom left;
-    background-size: 90% auto;
+    background-size: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     position: relative;
 
+    .car-footer-img {
+        position: absolute;
+        left: 0;
+    }
+
     .contact-top-container {
         display: flex;
         justify-content: space-evenly;
-        align-items: flex-end;
+        align-items: center;
         width: 100%;
-        margin-top: 150px;
-
+        flex-grow: 1;
+        
         .contact-card-container {
             max-width: 340px;
             position: relative;

@@ -27,10 +27,13 @@
         border-radius: 3px;
         margin-top: 60px;
         font-weight: 400;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
         cursor: pointer;
+        
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
     }
 
     // CAR

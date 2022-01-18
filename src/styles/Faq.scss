@@ -36,11 +36,12 @@
     .questions-container {
         display: grid;
         margin-top: 100px;
-        overflow: hidden;
+        overflow: scroll;
         grid-template-columns: 1fr 1fr;
         grid-gap: 30px;
         max-width: 1130px;
-        
+        align-items: start;
+
         .question-card {
             display: flex;
             flex-direction: column;
@@ -101,5 +102,29 @@
             }
         }
 
+        .loadmore-btn {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 90px;
+            padding: 30px;
+            font-size: 18px;
+            line-height: 30px;
+            font-weight: 700;
+            border-radius: 10px;
+            cursor: pointer;
+            background-color: rgba(237, 77, 71, 0.3);
+            color: #ED4D47;
+            grid-column: 2;
+            .loadmore-btn-plus {
+                cursor: pointer;
+                    height: 20px;
+                    width: 20px;
+                    background-image: url('../images/arrow-showmore.png');
+                    background-repeat: no-repeat;
+                    background-color: transparent;
+                    background-position: center;
+            }
+        }
     }
 }

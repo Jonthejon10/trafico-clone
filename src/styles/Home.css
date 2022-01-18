@@ -30,6 +30,10 @@
   border-radius: 3px;
   margin-top: 60px;
   font-weight: 400;
+  cursor: pointer;
+}
+
+.home-container .orange-btn a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,7 +42,6 @@
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  cursor: pointer;
 }
 
 .home-container .car-img {

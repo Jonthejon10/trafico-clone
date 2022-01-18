@@ -3,7 +3,7 @@
   background-image: url("../images/bg-footer_.png");
   background-repeat: no-repeat;
   background-position: bottom left;
-  background-size: 90% auto;
+  background-size: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -19,6 +19,13 @@
   position: relative;
 }
 
+.contact-container .car-footer-img {
+  position: absolute;
+  left: 0;
+  -webkit-transform: translateX(-100px);
+          transform: translateX(-100px);
+}
+
 .contact-container .contact-top-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -26,11 +33,13 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
-  margin-top: 150px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .contact-container .contact-top-container .contact-card-container {
