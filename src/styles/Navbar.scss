@@ -7,7 +7,6 @@
     position: absolute;
     top: 0;
     width: 100%;
-    z-index: 2;
 
     .navbar-btns-container {
         ul {
@@ -40,16 +39,6 @@
     .hamburger-menu-container {
         margin-top: 10px;
 
-        .hamburger-btn {
-            cursor: pointer;
-            background-image: url('../images/hamburger.svg');
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: center;
-            background-color: transparent;
-            width: 30px;
-            height: 30px;
-        }
     }
 }
 

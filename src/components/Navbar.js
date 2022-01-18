@@ -1,5 +1,6 @@
 import React from 'react'
 import '../styles/Navbar.css'
+import HamburgerMenu from './HamburgerMenu'
 
 const Navbar = () => {
     
@@ -12,13 +13,13 @@ const Navbar = () => {
                 <ul>
                     <li><a href='#about'>ABOUT</a></li>
                     <li><a href='#howto'>HOW TO</a></li>
-                    <li className='faq-btn'><a href='#faq'>FAQS</a></li>
+                    <li><a href='#faq'>FAQS</a></li>
                     <li><a href='#contact'>CONTACT US</a></li>
                 </ul>
             </div>
 
             <div className='hamburger-menu-container'>
-				<button type='button' className='hamburger-btn' />
+				<HamburgerMenu />
 			</div>
         </nav>
     )

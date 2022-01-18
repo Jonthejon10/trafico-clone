@@ -1,0 +1,63 @@
+.hamburger-menu-wrapper {
+    
+    .hamburger-btn {
+        cursor: pointer;
+        background-image: url('../images/hamburger.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        background-color: transparent;
+        width: 30px;
+        height: 30px;
+    }
+
+    .hamburger-container {
+        position: fixed;
+        right: 0;
+        top: 0;
+        background-color: #f58d74;
+        height: 100vh;
+        width: 100vw;
+        z-index: 999 !important;
+        animation: 0.2s ease-out 0s 1 slideFromRight;
+        overflow: hidden;
+        
+        .close-hamburger {
+            position: relative;
+            background-color: transparent;
+            font-size: 40px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            cursor: pointer;
+            padding: 50px;
+            color: #fff;
+        }
+
+        .hamburger-content-container {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            a {
+                font-size: 3rem;
+                padding: 20px;
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+@keyframes slideFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
