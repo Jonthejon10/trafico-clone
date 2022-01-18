@@ -10,10 +10,11 @@
     z-index: 2;
 
     .navbar-btns-container {
-
         ul {
+            margin-top: 10px;
             display: flex;
             list-style-type: none;
+            align-items: center;
 
             li {
                 margin-left: 10px;
@@ -31,6 +32,97 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                }
+            }
+        }
+    }
+
+    .hamburger-menu-container {
+        margin-top: 10px;
+
+        .hamburger-btn {
+            cursor: pointer;
+            background-image: url('../images/hamburger.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            background-color: transparent;
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
+
+
+@media screen and (min-width: 320px) {
+
+    .navbar {
+
+        img {
+            width: 150px;
+        }
+
+        .navbar-btns-container {
+            display: none;
+            visibility: hidden;
+        }
+
+        .hamburger-menu-container {
+            display: block;
+            visibility: visible;
+        }
+    }
+}
+
+@media screen and (min-width: 713px) {
+    .navbar {
+
+        img {
+            width: 212px;
+        }
+
+        .navbar-btns-container {
+            display: flex;
+            visibility: visible;
+        }
+
+        .hamburger-menu-container {
+            display: none;
+            visibility: hidden;
+        }
+    }
+}
+
+
+@media screen and (max-width: 980px) {
+     .navbar {
+
+        .navbar-btns-container {
+
+            ul {
+
+                li {
+                    margin-left: 0;
+
+                    a {
+                        width: 120px;
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+     }
+}
+
+@media screen and (max-width: 1201px) {
+
+    .navbar {
+        .navbar-btns-container {
+            ul {
+                li {
+                    &:last-child {
+                        background-color: transparent;
+                    }
                 }
             }
         }

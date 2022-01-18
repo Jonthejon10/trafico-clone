@@ -6,13 +6,14 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 100px;
-  background: url("../images/bg-faq.svg") top right;
-  background-repeat: no-repeat;
-  background-size: 1170px auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background: url("../images/bg-faq.svg") top right;
+  background-repeat: no-repeat;
 }
 
 .faq-container .top-content-container {
@@ -26,7 +27,6 @@
 
 .faq-container .top-content-container .faq-text-container {
   max-width: 550px;
-  margin-top: 150px;
 }
 
 .faq-container .top-content-container .faq-text-container .section-header {
@@ -41,18 +41,12 @@
 .faq-container .top-content-container .faq-text-container h2 {
   color: #402B2B;
   font-family: 'DM Serif Display', serif;
-  font-size: 48px;
-  line-height: 140%;
 }
 
 .faq-container .questions-container {
   display: -ms-grid;
   display: grid;
-  margin-top: 100px;
   overflow: scroll;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  grid-gap: 30px;
   max-width: 1130px;
   -webkit-box-align: start;
       -ms-flex-align: start;
@@ -78,7 +72,6 @@
   -webkit-box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.1);
           box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.1);
   border-radius: 10px;
-  height: 90px;
   padding: 30px;
   word-wrap: break-word;
   display: -webkit-box;
@@ -91,12 +84,6 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   z-index: 2;
-}
-
-.faq-container .questions-container .question-card .initial-content h4 {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 30px;
 }
 
 .faq-container .questions-container .question-card .initial-content .plus-btn {
@@ -145,8 +132,6 @@
           align-items: center;
   height: 90px;
   padding: 30px;
-  font-size: 18px;
-  line-height: 30px;
   font-weight: 700;
   border-radius: 10px;
   cursor: pointer;
@@ -160,9 +145,92 @@
   cursor: pointer;
   height: 20px;
   width: 20px;
+  margin-left: 10px;
+  padding-left: 20px;
   background-image: url("../images/arrow-showmore.png");
   background-repeat: no-repeat;
   background-color: transparent;
   background-position: center;
+}
+
+@media screen and (min-width: 320px) {
+  .faq-container {
+    padding: 50px;
+    background-size: contain auto;
+  }
+  .faq-container .top-content-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .faq-container .top-content-container .faq-text-container h2 {
+    font-size: 1.3rem;
+    line-height: 30px;
+  }
+  .faq-container .top-content-container img {
+    height: 150px;
+  }
+  .faq-container .questions-container {
+    grid-gap: 5px;
+    margin-top: 10px;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .faq-container .questions-container .question-card {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/ span 2;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .faq-container .top-content-container .faq-text-container h2 {
+    font-size: 1.8rem;
+  }
+  .faq-container .top-content-container img {
+    height: 200px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .faq-container .top-content-container .faq-text-container h2 {
+    font-size: 2.3rem;
+    line-height: 40px;
+  }
+  .faq-container .questions-container {
+    grid-gap: 20px;
+  }
+  .faq-container .questions-container .question-card {
+    grid-column: auto;
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .faq-container .top-content-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .faq-container .top-content-container img {
+    height: 250px;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .faq-container {
+    background-size: 1170px auto;
+  }
+  .faq-container .top-content-container .faq-text-container h2 {
+    font-size: 48px;
+    line-height: 140%;
+  }
+  .faq-container .top-content-container img {
+    height: 350px;
+  }
 }
 /*# sourceMappingURL=Faq.css.map */

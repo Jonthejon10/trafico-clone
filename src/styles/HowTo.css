@@ -2,13 +2,12 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 100px;
 }
 
 .howto-container .howto-text-container {
@@ -29,6 +28,50 @@
   font-size: 18px;
   line-height: 40px;
   color: #402B2B;
-  margin-top: 40px;
+}
+
+@media screen and (min-width: 320px) {
+  .howto-container {
+    padding: 50px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .howto-container img {
+    height: 300px;
+  }
+  .howto-container .howto-text-container p {
+    font-size: 1rem;
+    line-height: 25px;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .howto-container img {
+    height: 350px;
+  }
+  .howto-container .howto-text-container p {
+    font-size: 18px;
+    line-height: 40px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .howto-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .howto-container img {
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .howto-container img {
+    height: 680px;
+  }
 }
 /*# sourceMappingURL=HowTo.css.map */

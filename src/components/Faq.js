@@ -43,10 +43,13 @@ const Faq = () => {
     }
 
     return (
-		<div className='content-container faq-container' id='faq'>
+        <div className='content-container faq-container' id='faq'>
+            
 			<div className='top-content-container'>
-				<div className='faq-text-container'>
-					<h3 className='section-header'>FAQ</h3>
+			
+                <div className='faq-text-container'>
+				
+                    <h3 className='section-header'>FAQ</h3>
 
 					<h2>
 						Questions and Answers on Professional Traffic Permits:
@@ -89,7 +92,7 @@ const Faq = () => {
                     className='loadmore-btn'>
                     <span></span>
                     LOAD MORE
-                    <button type='button' className='loadmore-btn-plus' />
+                    <span className='loadmore-btn-plus' />
 				</button>
 			</div>
 		</div>

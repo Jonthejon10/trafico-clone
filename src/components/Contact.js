@@ -14,13 +14,16 @@ const Contact = () => {
     }
 
     return (
-		<div className='content-container contact-container' id='contact'>
-			<img
-				data-aos='fade-right'
-				className='car-footer-img'
-				src={require('../images/car-footer.svg').default}
-				alt=''
-			/>
+        <div className='content-container contact-container' id='contact'>
+            
+             <div className='car-footer-container'>
+                <img
+                    data-aos='fade-right'
+                    className='car-footer-img'
+                    src={require('../images/car-footer.svg').default}
+                    alt=''
+                />
+            </div>
 
 			<div className='contact-top-container'>
 				<div className='contact-card-container'>

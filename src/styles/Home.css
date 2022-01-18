@@ -9,31 +9,30 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 250px 250px 250px 325px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-family: "DM Serif Display", serif;
-  position: relative;
   z-index: 1;
 }
 
-.home-container h1 {
-  font-size: 100px;
+.home-container .home-middle-container h1 {
   max-width: 900px;
   line-height: 100%;
 }
 
-.home-container .orange-btn {
+.home-container .home-middle-container .orange-btn {
   width: 200px;
   padding: 15px;
   font-family: "Rubik", sans-serif;
   background-color: #ee4d47;
   color: #fff;
   border-radius: 3px;
-  margin-top: 60px;
   font-weight: 400;
   cursor: pointer;
 }
 
-.home-container .orange-btn a {
+.home-container .home-middle-container .orange-btn a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -44,10 +43,7 @@
       justify-content: space-around;
 }
 
-.home-container .car-img {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+.home-container .home-car-container .car-img {
   -webkit-animation: 1s ease-out 0s 1 slideFromLeft;
           animation: 1s ease-out 0s 1 slideFromLeft;
 }
@@ -71,6 +67,73 @@
   100% {
     -webkit-transform: translateX(0);
             transform: translateX(0);
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .home-container {
+    padding: 130px 50px 20px 50px;
+    background-size: cover;
+  }
+  .home-container .home-middle-container {
+    padding-left: 0;
+  }
+  .home-container .home-middle-container h1 {
+    font-size: 3rem;
+  }
+  .home-container .home-middle-container .orange-btn {
+    margin-top: 20px;
+  }
+  .home-container .home-car-container {
+    margin-left: -50px;
+  }
+  .home-container .home-car-container img {
+    width: 260px;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .home-container {
+    padding: 140px 80px 0px 80px;
+  }
+  .home-container .home-middle-container h1 {
+    font-size: 4rem;
+  }
+  .home-container .home-car-container {
+    margin-left: -80px;
+  }
+  .home-container .home-car-container img {
+    width: 350px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .home-container {
+    padding-top: 160px;
+  }
+  .home-container .home-middle-container h1 {
+    font-size: 5rem;
+  }
+  .home-container .home-car-container {
+    margin-left: -100px;
+  }
+  .home-container .home-car-container img {
+    width: 380px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .home-container .home-middle-container {
+    padding-left: 110px;
+  }
+  .home-container .home-middle-container h1 {
+    font-size: 6rem;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .home-container {
+    background-size: contain;
   }
 }
 /*# sourceMappingURL=Home.css.map */
